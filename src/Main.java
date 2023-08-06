@@ -58,7 +58,7 @@ public class Main {
         for(int i =0;i<arrays.length;i=i+1){
             if(arrays[i]%2 !=0){
                 arrays[i]+=1;
-                System.out.print(arrays[i]);
+                System.out.print(arrays[i]+", ");
             }
 
 
