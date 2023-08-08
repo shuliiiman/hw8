@@ -31,14 +31,14 @@ public class Main {
         arrays[1] = 2;
         arrays[2] = 3;
         for (int i = 0; i < arrays.length; i++) {
-            if (arrays[i] == 3) {
+            if (i == arrays.length-1) {
                 System.out.print(arrays[i]);
             } else System.out.print(arrays[i] + ", ");
         }
         System.out.println(" ");
         float[] arrays1 = {1.57f, 7.654f, 9.986f};
         for (int i = 0; i < arrays1.length; i++) {
-            if (arrays[i] == 3) {
+            if (i == arrays1.length-1) {
                 System.out.print(arrays1[i]);
             } else System.out.print(arrays1[i] + ", ");
         }
@@ -52,14 +52,14 @@ public class Main {
         arrays[1] = 2;
         arrays[2] = 3;
         for (int i = 2; i >= 0; i--) {
-            if (arrays[i] == 1) {
+            if (i==0) {
                 System.out.print(arrays[i]);
             } else System.out.print(arrays[i] + ", ");
         }
         System.out.println(" ");
         float[] arrays1 = {1.57f, 7.654f, 9.986f};
         for (int i = 2; i >= 0; i--) {
-            if (arrays1[i] == 1.57f) {
+            if (i==0) {
                 System.out.print(arrays1[i]);
             } else System.out.print(arrays1[i] + ", ");
         }
@@ -76,7 +76,7 @@ public class Main {
         for (int i = 0; i < arrays.length; i = i + 1) {
             if (arrays[i] % 2 != 0) {
                 arrays[i] += 1;
-                if (arrays[i] == arrays[2]) {
+                if (i == arrays.length-1) {
                     System.out.print(arrays[i]);
                 } else System.out.print(arrays[i] + ", ");
             }
