@@ -51,7 +51,7 @@ public class Main {
         arrays[0] = 1;
         arrays[1] = 2;
         arrays[2] = 3;
-        for (int i = 2; i >= 0; i--) {
+        for (int i = arrays.length-1; i >= 0; i--) {
             if (i==0) {
                 System.out.print(arrays[i]);
             } else System.out.print(arrays[i] + ", ");
